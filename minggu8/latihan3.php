@@ -6,6 +6,7 @@ $mahasiswa = [
     "nim" => "22510011", 
     "jurusan" => "Sistem Informasi", 
     "email" => "yusuf_22510011@stimata.co.id",
+    "tugas" => ["100, 90, 80"]
     ],
 
     [
@@ -24,15 +25,10 @@ $mahasiswa = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Mahasiswa</title>
 </head>
+
 <body>
     <h1>Data Mahasiswa</h1>
-    <?php foreach ($mahasiswa as $mhs): ?>
-    <ul>
-        <li>Nama : <?= $mhs["nama"] ?></li>
-        <li>NIM : <?= $mhs["nim"] ?></li>
-        <li>Jurusan : <?= $mhs["jurusan"] ?></li>
-        <li> Email : <?= $mhs["email"] ?></li>
-    </ul>
-    <?php endforeach; ?>
+    <?php echo $mahasiswa[0]["tugas"][1]; ?>
 </body>
+
 </html>
