@@ -8,7 +8,7 @@
 </head>
 <body>
     <ul>
-        <li><img src="<?= $_GET["gambar"]; ?>"></li>
+        <li><img src="img/<?= $_GET["gambar"]; ?>"></li>
         <li><?= $_GET["judul"]; ?></li>
         <li><?= $_GET["pemain"]; ?></li>
         <li><?= $_GET["tahun"]; ?></li>
